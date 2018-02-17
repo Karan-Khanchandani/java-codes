@@ -8,7 +8,7 @@ How would you compute the parity of a very large number of 64-bit words?
 
 import java.util.Scanner;
 
-public class Problem_6_1_parity{
+public class Problem_5_1_parity{
 
     public static short cp(long x){
         x ^= (x >> 16);

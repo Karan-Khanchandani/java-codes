@@ -6,7 +6,7 @@ the most significant bit (MSB). Implement code that takes as input a 64-bit inte
 and swaps the bits at indices i and j.
 */
 
-public class Problem_6_2 {
+public class Problem_5_2 {
 
     public static long swapBits(long x, int i, int j) {
         if (((x >>> i) & 1) != ((x >>> j) & 1)) {

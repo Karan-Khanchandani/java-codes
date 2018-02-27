@@ -24,6 +24,14 @@ public class Problem_11_2{
 
     public static enum SubArrayType {INCREASING, DECREASING};
 
+
+    public static void printList(List<Integer> list){
+        for(Integer i : list){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
     public static Integer[] mergeSortedLists(Integer[] num){
        List<List<Integer>> sortedLists= new ArrayList<>();
        SubArrayType subArrayType = SubArrayType.INCREASING;
@@ -31,16 +39,17 @@ public class Problem_11_2{
 
        //populate Lists
 
-       for(int i = 1; i< num.length; i++){
+       for(int i = 1; i<= num.length; i++){
             if(
             i == num.length || 
             ((num[i-1] > num[i]) && subArrayType == SubArrayType.INCREASING) ||
             ((num[i-1] <= num[i]) && subArrayType == SubArrayType.DECREASING)){
 
                 if(subArrayType == SubArrayType.INCREASING){
-                sortedLists.add(new ArrayList<Integer>(Arrays.asList(Arrays.copyOfRange(num, startIndex, i-1))));
+                sortedLists.add(new ArrayList<Integer>(Arrays.asList(Arrays.copyOfRange(num, startIndex, i))));
             }else{
-                List<Integer> revList = new ArrayList<Integer>(Arrays.asList(Arrays.copyOfRange(num, startIndex, i-1)));
+                List<Integer> revList = new ArrayList<Integer>(Arrays.asList(Arrays.copyOfRange(num, startIndex, i)));
+                //printList(revList);
                 Collections.reverse(revList);
                 sortedLists.add(revList);
             }
@@ -51,9 +60,10 @@ public class Problem_11_2{
 
        List<Iterator<Integer>> iters= new ArrayList<>(sortedLists.size());
 
-       for(int i = 0; i < iters.size(); i++){
+       for(int i = 0; i < sortedLists.size(); i++){
            iters.add(sortedLists.get(i).iterator());
        }
+    
 
        PriorityQueue<ArrayEntry> minHeap = new PriorityQueue<>(((int)sortedLists.size()),
        new Comparator<ArrayEntry>() {

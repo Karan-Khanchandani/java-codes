@@ -32,7 +32,7 @@ public class Problem_13_7 {
             }
         }
 
-        int keywordSoFar = 0;
+       
         int remainingKeyWords = keywords.size();
 
         for (int right = 0, left = 0; right < paragraph.size(); right++) {

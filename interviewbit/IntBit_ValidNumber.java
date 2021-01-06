@@ -1,6 +1,8 @@
 package interviewbit;
 
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int isNumber(final String A) {
@@ -8,12 +10,12 @@ public class Solution {
         Matcher m;
         p = Pattern.compile("^[ ]*[-]?[\\d]*([.][\\d]+)?[e]?[-]?[\\d]+[ ]*$");
         m = p.matcher(A);
-        if(m.find()) return 1;
-        
+        if (m.find()) return 1;
+
         p = Pattern.compile("^[ ]*[-]?[\\d]*[.]?[\\d]+[ ]*$");
         m = p.matcher(A);
-        if(m.find()) return 1;
-        
+        if (m.find()) return 1;
+
         return 0;
     }
 }

@@ -1,6 +1,8 @@
 package interviewbit;
 
-public class Solution {
+import java.util.HashMap;
+
+public class InterviewBit_fraction {
     public String fractionToDecimal(int A, int B) {
         if (A == 0) {
             return "0";
@@ -8,16 +10,16 @@ public class Solution {
         StringBuilder res = new StringBuilder();
         // "+" or "-"
         res.append(((A > 0) ^ (B > 0)) ? "-" : "");
-        long num = Math.abs((long)A);
-        long den = Math.abs((long)B);
-        
+        long num = Math.abs((long) A);
+        long den = Math.abs((long) B);
+
         // integral part
         res.append(num / den);
         num %= den;
         if (num == 0) {
             return res.toString();
         }
-        
+
         // fractional part
         res.append(".");
         HashMap<Long, Integer> map = new HashMap<Long, Integer>();
@@ -31,8 +33,7 @@ public class Solution {
                 res.insert(index, "(");
                 res.append(")");
                 break;
-            }
-            else {
+            } else {
                 map.put(num, res.length());
             }
         }

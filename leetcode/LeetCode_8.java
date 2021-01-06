@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+class LeetCode_8 {
     public int myAtoi(String str) {
      if (str.isEmpty()) return 0;
     int sign = 1, base = 0, i = 0;

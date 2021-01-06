@@ -1,7 +1,10 @@
 package leetcode;
 
-class Solution {
-    private static Map<Integer, String> symbols;
+import java.util.Map;
+import java.util.TreeMap;
+
+class LeetCode_12 {
+    private static TreeMap<Integer, String> symbols;
     
     
     public String intToRoman(int num) {

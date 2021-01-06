@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+class LeetCode_5 {
     private int start, maxLen;
     public String longestPalindrome(String s) {
         if(s.length() < 2){

@@ -1,6 +1,9 @@
 package leetcode;
 
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class LeetCode_word_search_2 {
     
     public static class Trie{
         public Trie[] children;

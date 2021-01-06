@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+class LeetCode_4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if(nums2.length < nums1.length){
             return findMedianSortedArrays(nums2, nums1);

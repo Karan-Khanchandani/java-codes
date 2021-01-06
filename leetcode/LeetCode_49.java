@@ -1,6 +1,8 @@
 package leetcode;
 
-class Solution {
+import java.util.*;
+
+class LeetCode_49 {
     public List<List<String>> groupAnagrams(String[] strs) {
         if(strs == null || strs.length == 0){
             return new ArrayList<List<String>>();

@@ -1,20 +1,23 @@
 package leetcode;
 
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public List<Node> children;
 
-    public Node() {}
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Stack;
 
-    public Node(int _val,List<Node> _children) {
-        val = _val;
-        children = _children;
+class Leetcode_Serial_Deserial_Nary_tree {
+    static class Node {
+        public int val;
+        public List<Node> children;
+
+        public Node(int i) {}
+
+        public Node(int _val, List<Node> _children) {
+            val = _val;
+            children = _children;
+        }
     }
-};
-*/
-class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(Node root) {
@@ -76,7 +79,7 @@ class Codec {
            }else{
                if(!s.equals("")){
                    Node n = new Node(Integer.parseInt(s));
-                   n.children = new ArrayList<Node>();
+                   n.children = new ArrayList<>();
               node_st.push(n);
                string_st.push("$");
                }

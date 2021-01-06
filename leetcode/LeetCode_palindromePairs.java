@@ -1,6 +1,10 @@
 package leetcode;
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class LeetCode_palindromePairs {
     private static class TrieNode{
         int index;
         TrieNode[] next;

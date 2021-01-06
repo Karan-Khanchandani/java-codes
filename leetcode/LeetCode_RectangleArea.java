@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+class LeetCode_RectangleArea {
     public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
         //x-bottom intersect when bottom left of one rect is lies between bleft-x  than top right-x of another
         //y-bottom intersect when bottome left y of one rect lies between bleft-y and top-right y of other

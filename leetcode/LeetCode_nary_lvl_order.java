@@ -1,20 +1,24 @@
 package leetcode;
 
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public List<Node> children;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
-    public Node() {}
+class LeetCode_nary_lvl_order {
 
-    public Node(int _val,List<Node> _children) {
-        val = _val;
-        children = _children;
+    class Node {
+        public int val;
+        public List<Node> children;
+
+        public Node() {}
+
+        public Node(int _val,List<Node> _children) {
+            val = _val;
+            children = _children;
+        }
     }
-};
-*/
-class Solution {
+
     public List<List<Integer>> levelOrder(Node root) {
         
         List<List<Integer>> l_order = new ArrayList<>();

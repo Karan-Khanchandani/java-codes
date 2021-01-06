@@ -1,6 +1,8 @@
 package leetcode;
 
-class Solution {
+import java.util.*;
+
+class LeetCode_wordLadderII {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> dictionary = new HashSet<String>(wordList);
         HashMap<String, ArrayList<String>> nodeNeighbors = new HashMap<>();

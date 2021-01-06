@@ -1,6 +1,6 @@
 package leetcode;
 
-class Solution {
+class LeetCode_62 {
     
     public int bin_coff(int n, int k){
         int[][] C = new int[n+1][k+1];

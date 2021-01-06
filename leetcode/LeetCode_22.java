@@ -1,6 +1,9 @@
 package leetcode;
 
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class LeetCode_22 {
     public List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList<>();
         if(n == 0){

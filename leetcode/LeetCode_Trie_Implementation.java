@@ -1,6 +1,6 @@
 package leetcode;
 
-class Trie {
+class LeetCode_Trie_Implementation {
 
     /** Initialize your data structure here. */
     
@@ -17,7 +17,7 @@ class Trie {
     }
     
     public TrieNode root;
-    public Trie() {     
+    public LeetCode_Trie_Implementation() {
             root = new TrieNode();
     }
     

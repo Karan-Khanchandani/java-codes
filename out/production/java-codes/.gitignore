@@ -23,6 +23,3 @@ hs_err_pid*
 
 *.in
 *.out
-
-.vscode
-.idea

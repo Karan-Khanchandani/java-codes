@@ -7,7 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class LeetCode_450 {
     public TreeNode deleteNode(TreeNode root, int key) {
          if(root == null){
         return null;
